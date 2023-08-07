@@ -1,0 +1,14 @@
+# Log on to andes or polaris. 
+# You can how busy each one is by using the 'htop' command once logged on 
+ssh andes.darmouth.edu
+
+# Navigate to the Chaudhary Lab DartFS
+cd /dartfs/rc/lab/C/ChaudharyB
+
+# The scl command is just to get the latest version of the GCC compilers into your environment, for 
+# building new packages.  You don't # need it just to run R with those installed packages.
+
+# Load R (you can see what version are available using 'module list')
+
+scl enable devtoolset-10 bash
+module load R/4.2.3
